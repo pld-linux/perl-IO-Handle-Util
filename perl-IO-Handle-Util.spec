@@ -7,7 +7,7 @@
 Summary:	IO::Handle::Util - Functions for working with IO::Handle like objects.
 Name:		perl-IO-Handle-Util
 Version:	0.02
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -55,6 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes INSTALL README
+%dir %{perl_vendorlib}/IO/Handle
 %{perl_vendorlib}/IO/Handle/*.pm
 %{perl_vendorlib}/IO/Handle/Prototype
 %{perl_vendorlib}/IO/Handle/Util
